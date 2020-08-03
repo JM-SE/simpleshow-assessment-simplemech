@@ -112,9 +112,18 @@ window.addEventListener('load', function () {
             piecesSet.rightLeg &&
             piecesSet.leftLeg
         ) {
-            document.body.style.background = 'blue';
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('winSlide').style.display = 'block';
         }
     };
+
+    document.getElementById('winSlideClose').addEventListener('click', () => {
+        document.getElementById('gameContainer').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('winSlide').style.display = 'none';
+        document.getElementById('simpleshowLogo').style.display = 'block';
+    });
 
     //
     //
@@ -122,7 +131,7 @@ window.addEventListener('load', function () {
     //
 
     window.addEventListener('click', () => {
-        console.log(piecesSet);
+        //console.log(piecesSet);
         //console.log(legLeftPiece);
         //console.log(draggable);
     });

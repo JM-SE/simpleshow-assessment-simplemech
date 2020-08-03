@@ -7,15 +7,25 @@
         <title>tst</title>
     </head>
     <body>
-        <div class="container">
+        <main id="gameContainer" class="container">
+            <div id="winSlide" class="win-slide">
+                <img
+                    src="./assets/feedback_overlay-box-large.svg"
+                    alt="win-slide-large-screen"
+                />
+                <div id="winSlideClose" class="win-slide-close"></div>
+            </div>
+            <div id="simpleshowLogo" class="simpleshow-logo">LOGO</div>
+            <div id="overlay" class="overlay"></div>
             <!-- <img src="./assets/simplemech-chest.svg" alt="arm2" /> -->
+            <img src="./assets/instruction_box.svg" alt="instruction-box" />
             <div id="armRight" class="arm-right-container"></div>
             <div id="armLeft" class="arm-left-container"></div>
             <div id="head" class="head-container"></div>
             <div id="chest" class="chest-container"></div>
             <div id="legRight" class="leg-right-container"></div>
             <div id="legLeft" class="leg-left-container"></div>
-        </div>
+        </main>
 
         <script src="js/plain-draggable.min.js"></script>
         <script src="js/main.js"></script>

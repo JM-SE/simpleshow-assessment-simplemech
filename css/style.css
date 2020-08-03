@@ -23,6 +23,50 @@
         height: 634px;
         background: url('../assets/hanger_background.svg') no-repeat center;
         position: relative;
+        z-index: 0;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.671);
+        z-index: 1;
+    }
+
+    .win-slide {
+        display: none;
+        position: relative;
+        width: 1152px;
+        height: 634px;
+        z-index: 2;
+    }
+
+    .win-slide-close {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 110px;
+        left: 855px;
+        cursor: pointer;
+    }
+
+    .simpleshow-logo {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: red;
+        z-index: 1;
     }
 
     .arm-right-container {
