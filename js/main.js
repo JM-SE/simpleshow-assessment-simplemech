@@ -135,15 +135,4 @@ window.addEventListener('load', function () {
             document.getElementById('feedbackSlide').style.display = 'none';
             document.getElementById('simpleshowLogo').style.display = 'block';
         });
-
-    //
-    //
-    //
-    //
-
-    window.addEventListener('click', () => {
-        //console.log(piecesSet);
-        //console.log(legLeftPiece);
-        //console.log(draggable);
-    });
 });
