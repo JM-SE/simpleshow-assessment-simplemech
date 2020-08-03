@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: block;
+        width: 1152px;
+        height: 634px;
+        background: url('../assets/hanger_background.svg') no-repeat center;
+        position: relative;
+    }
+
+    .arm-right-container {
+        width: 76px;
+        height: 250px;
+        background: url('../assets/simplemech-arm-2-mod-01.svg') no-repeat
+            center;
+        position: relative;
+        top: 160px;
+        left: 970px;
+    }
+
+    .arm-left-container {
+        width: 76px;
+        height: 250px;
+        background: url('../assets/simplemech-arm-1-mod-01.svg') no-repeat
+            center;
+        position: relative;
+        top: -95px;
+        left: 890px;
+    }
+
+    .head-container {
+        width: 100px;
+        height: 100px;
+        background: url('../assets/simplemech-head-mod-01.svg') no-repeat center;
+        position: relative;
+        top: -167px;
+        left: 750px;
+    }
+
+    .chest-container {
+        width: 180px;
+        height: 180px;
+        background: url('../assets/simplemech-chest-mod-01.svg') no-repeat
+            center;
+        position: relative;
+        top: -450px;
+        left: 720px;
+    }
+
+    .leg-right-container {
+        width: 76px;
+        height: 250px;
+        background: url('../assets/simplemech-leg2-mod-01.svg') no-repeat center;
+        position: relative;
+        top: -577px;
+        left: 670px;
+    }
+
+    .leg-left-container {
+        width: 76px;
+        height: 250px;
+        background: url('../assets/simplemech-leg1-mod-01.svg') no-repeat center;
+        position: relative;
+        top: -827px;
+        left: 600px;
+    }
+
+    .container img {
+        position: absolute;
+        top: 0;
+    }
+}
