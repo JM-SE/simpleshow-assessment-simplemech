@@ -4,21 +4,53 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
         <title>tst</title>
     </head>
     <body>
+        <div id="simpleshowLogo" class="simpleshow-logo">
+            <a href="https://simpleshow.com/"
+                ><img
+                    src="./assets/simpleshow_logo-01.svg"
+                    alt="simpleshow-logo"
+            /></a>
+            <div class="mobile-error">
+                <i class="far fa-grin-beam-sweat"></i>
+            </div>
+        </div>
+
+        <div id="startSlide" class="start-slide">
+            <button id="startBuild" class="start-build-btn">
+                <img
+                    src="./assets/start_button-mod-01.svg"
+                    alt="start-button"
+                />
+            </button>
+            <img
+                src="./assets/start_overlay-box-large.svg"
+                alt="start-slide-large-screen"
+            />
+        </div>
+
         <main id="gameContainer" class="container">
-            <div id="winSlide" class="win-slide">
+            <div id="feedbackSlide" class="feedback-slide">
                 <img
                     src="./assets/feedback_overlay-box-large.svg"
-                    alt="win-slide-large-screen"
+                    alt="feedback-slide-large-screen"
                 />
-                <div id="winSlideClose" class="win-slide-close"></div>
+                <div id="feedbackSlideClose" class="feedback-slide-close"></div>
             </div>
-            <div id="simpleshowLogo" class="simpleshow-logo">LOGO</div>
+
+            <a href="https://simpleshow.com/"><div class="logo-link"></div></a>
             <div id="overlay" class="overlay"></div>
-            <!-- <img src="./assets/simplemech-chest.svg" alt="arm2" /> -->
-            <img src="./assets/instruction_box.svg" alt="instruction-box" />
+            <img
+                src="./assets/instruction_box.svg"
+                alt="instruction-box"
+                class="instruction-box"
+            />
             <div id="armRight" class="arm-right-container"></div>
             <div id="armLeft" class="arm-left-container"></div>
             <div id="head" class="head-container"></div>

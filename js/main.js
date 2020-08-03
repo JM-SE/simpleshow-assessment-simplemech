@@ -1,6 +1,10 @@
 window.addEventListener('load', function () {
     'use strict';
 
+    const startSlide = document.getElementById('startSlide');
+    const startBuild = document.getElementById('startBuild');
+    const overlay = document.getElementById('overlay');
+    const feedbackSlide = document.getElementById('feedbackSlide');
     const armRight = document.getElementById('armRight');
     const armLeft = document.getElementById('armLeft');
     const head = document.getElementById('head');
@@ -97,6 +101,11 @@ window.addEventListener('load', function () {
     //
     // Functions
 
+    startBuild.addEventListener('click', () => {
+        startSlide.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+
     const checkPosition = (piece, posX, posY) => {
         if (piece.rect.top === posY && piece.rect.left === posX) {
             piecesSet[piece.name] = true;
@@ -112,18 +121,20 @@ window.addEventListener('load', function () {
             piecesSet.rightLeg &&
             piecesSet.leftLeg
         ) {
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('winSlide').style.display = 'block';
+            overlay.style.display = 'block';
+            feedbackSlide.style.display = 'block';
         }
     };
 
-    document.getElementById('winSlideClose').addEventListener('click', () => {
-        document.getElementById('gameContainer').style.display = 'none';
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('winSlide').style.display = 'none';
-        document.getElementById('simpleshowLogo').style.display = 'block';
-    });
+    document
+        .getElementById('feedbackSlideClose')
+        .addEventListener('click', () => {
+            document.getElementById('gameContainer').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('feedbackSlide').style.display = 'none';
+            document.getElementById('simpleshowLogo').style.display = 'block';
+        });
 
     //
     //
